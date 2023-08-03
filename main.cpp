@@ -70,12 +70,12 @@ int main(void) {
 		{
 			if (n == num) {
 				sprintf(str2, "photos//Myfile_%d.png", n);
-				getZoomImage(temps, str2, 1920, 1080);
+				getZoomImage(temps, str2, wi, hi);
 				n++;
 			} else 
 			{
 				sprintf(str2, "photos//Myfile_%d.png", n++);
-				getZoomImage(temps, str2, 1920, 1080);
+				getZoomImage(temps, str2, wi, hi);
 			}
 
 		} 
@@ -83,21 +83,15 @@ int main(void) {
 		{
 			n = 1;
 			sprintf(str2, "photos//Myfile_%d.png", n);
-			getZoomImage(temps, str2, 1920, 1080);
+			getZoomImage(temps, str2, wi, hi);
 			n++;
 		}
-		if (0 == strcmp(str2, "photos//Myfile_4.png")) 
-		{
-			sprintf(str2, "photos//Myfile_%d.png", 1);
-			getZoomImage(temps, str2, 1920, 1080);
-		}
-		
 		
 		
 		for (int i = 0; i <= 255 && is_running == 1; i++, delay_fps(30)) 
 		{
 			//图片渐变
-			putimage_alphablend(pimg, temps, 0, 0, i, 0, 0, 1920, 1080);
+			putimage_alphablend(pimg, temps, 0, 0, i, 0, 0, wi, hi);
 			putimage(0, 0, pimg);
 			text(str);
 			setfont(hi/30, 0, "黑体");
