@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# LLSS
-青荷屏保，轻量与自由
-=======
 #使用说明
 *本文档与README.md文件的内容大致相同。
 ##介绍
@@ -27,4 +23,3 @@ Github:ProgramDog404
 本软件遵循GPL开源协议
 三张默认图片均来自网络(https://www.pexels.com)，如有侵权，请联系作者删除
 作者：哈士猿
->>>>>>> 788cf6f (README.md)
